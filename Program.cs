@@ -19,6 +19,16 @@ namespace ClientTM
             firstTry.Executer();
 
             Connexion.FermerConnexion(); // On ferme la connexion
+
+            Connexion.OuvrirConnexion();
+
+            string setup1 = Connexion.RecevoirMessage();
+            Console.WriteLine(setup1);
+
+            SecondTry secondTry = new SecondTry();
+            secondTry.Executer();
+
+            Connexion.FermerConnexion(); // On ferme la connexion
         }
     }
 }
