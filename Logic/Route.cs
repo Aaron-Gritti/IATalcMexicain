@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClientTM.Logic
 {
-    internal class Routes
+    internal class Route
     {
 
         public int NiveauBateau { get; set; }
@@ -17,9 +17,9 @@ namespace ClientTM.Logic
         public int ValeurCoffre3 { get; set; }
         public Boolean PresenceMonstre { get; set; }
 
-        public Routes() { }
+        public Route() { }
 
-        public Routes(int niveauBateau, int valeurAttaque, int valeurCoffre1, int valeurCoffre2, int valeurCoffre3, bool presenceMonstre)
+        public Route(int niveauBateau, int valeurAttaque, int valeurCoffre1, int valeurCoffre2, int valeurCoffre3, bool presenceMonstre)
         {
             this.NiveauBateau = niveauBateau;
             this.ValeurAttaque = valeurAttaque;

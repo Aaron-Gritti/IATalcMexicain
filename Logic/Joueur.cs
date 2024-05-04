@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClientTM.Logic
 {
-    internal class Joueurs
+    internal class Joueur
     {
 
         public int Score { get; set; }
@@ -17,9 +17,9 @@ namespace ClientTM.Logic
         public int NbCoffres { get; set; }
         public int ValeurButins { get; set; }
 
-        public Joueurs() { }
+        public Joueur() { }
 
-        public Joueurs(int score, int valeurAttaque, int vie, string activite, int nbCoffres, int valeurButins)
+        public Joueur(int score, int valeurAttaque, int vie, string activite, int nbCoffres, int valeurButins)
         {
             this.Score = score;
             this.ValeurAttaque = valeurAttaque;
